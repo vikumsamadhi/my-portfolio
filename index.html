@@ -69,6 +69,15 @@
     .repo-link { display: inline-flex; width: fit-content; align-items: center; gap: 8px; margin-top: 20px; color: var(--accent); font-size: .84rem; font-weight: 700; text-decoration: none; }
     .repo-link:hover { text-decoration: underline; text-underline-offset: 4px; }
     .repo-link span { font-size: 1rem; }
+    .design { padding: 28px 0 100px; border-top: 1px solid var(--line); }
+    .design-heading { margin-bottom: 24px; }
+    .design-heading h2 { font-size: clamp(2.6rem, 5vw, 4.2rem); }
+    .design-panel { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: clamp(24px, 4vw, 40px); border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
+    .design-panel p { margin: 0; }
+    .design-panel .section-label { margin-bottom: 8px; color: var(--accent); }
+    .design-note { color: var(--muted); }
+    .behance-link { display: inline-flex; flex-shrink: 0; min-height: 46px; align-items: center; justify-content: center; padding: 0 16px; border: 1px solid #747a53; border-radius: 999px; color: var(--accent); font-size: .86rem; font-weight: 700; text-decoration: none; }
+    .behance-link:hover { background: #d8f36a15; }
     .about { display: grid; grid-template-columns: .7fr 1.3fr; gap: 54px; padding: 64px 0 76px; border-top: 1px solid var(--line); }
     .about h2 { max-width: 330px; font-family: var(--serif); font-size: clamp(2.4rem, 4vw, 3.5rem); font-weight: 400; }
     .about-copy { max-width: 620px; color: var(--muted); }
@@ -87,6 +96,8 @@
       .section-head { align-items: start; flex-direction: column; gap: 12px; }
       .project-grid { grid-template-columns: 1fr; gap: 12px; }
       .project { min-height: 260px; }
+      .design { padding: 24px 0 74px; }
+      .design-panel { align-items: flex-start; flex-direction: column; }
       .about { grid-template-columns: 1fr; gap: 20px; padding: 50px 0 58px; }
     }
     @media (max-width: 390px) {
@@ -109,7 +120,8 @@
     <div class="masthead">
       <a class="brand" href="#top" aria-label="Vikum Samadhi home"><span aria-hidden="true">VS</span>Vikum Samadhi</a>
       <nav aria-label="Main navigation">
-        <a href="#projects">Projects</a>
+        <a href="#projects">Software</a>
+        <a href="#graphic-design">Design</a>
         <a href="#about">About</a>
         <a class="profile-link" href="https://github.com/vikumsamadhi" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
       </nav>
@@ -159,6 +171,16 @@
           <div class="tags" aria-label="Technologies"><span>React Native</span><span>JavaScript</span></div>
           <a class="repo-link" href="https://github.com/vikumsamadhi/login_App" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a>
         </article>
+      </div>
+    </section>
+    <section class="shell design" id="graphic-design" aria-labelledby="design-title">
+      <div class="design-heading"><p class="section-label">02 — Selected visual work</p><h2 id="design-title">Graphic Design</h2></div>
+      <div class="design-panel">
+        <div>
+          <p class="section-label">Projects coming soon</p>
+          <p class="design-note">Visit Behance to explore Vikum’s graphic design work.</p>
+        </div>
+        <a class="behance-link" href="https://www.behance.net/vikumsamadhi" target="_blank" rel="noopener noreferrer">View my work on Behance <span aria-hidden="true">↗</span></a>
       </div>
     </section>
     <section class="shell about" id="about" aria-labelledby="about-title">
